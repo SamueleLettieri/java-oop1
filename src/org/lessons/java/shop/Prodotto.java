@@ -9,7 +9,7 @@ public class Prodotto {
 	String descrizione;
 	int prezzo;
 	int iva;
-	int max = 99999999;
+	
 	
 
 	
@@ -22,6 +22,8 @@ public class Prodotto {
 
 	
 	int formaCodice() {
+		int max = 99999999;
+		
 		Random r = new Random();
 		
 		return codice = r.nextInt(max);
